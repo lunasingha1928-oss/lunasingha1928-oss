@@ -14,7 +14,7 @@
 
 - &#127891; B.E. Computer Science & Engineering (AI & ML), Sathyabama Institute of Science and Technology — Batch 2025–2029
 - &#128300; Research background in GIS / remote sensing — Sentinel-1 SAR, Google Earth Engine, QGIS, CHIRPS
-- &#128196; Published — *ICCET 2026*: SAR-based flood mapping of the Brahmaputra Valley (92.39% accuracy), Google Scholar–indexed
+- &#128196; Published — *ICCET 2026*: SAR-based flood mapping of the Brahmaputra Valley (92.39% accuracy)
 - &#128188; Part-time AI prompt evaluation work, building toward research, freelance, and internship experience
 - &#9889; Currently exploring algorithmic trading systems and applied ML
 
@@ -69,9 +69,9 @@ Small Python application that places orders on the Binance Futures Testnet — e
 <div align="center">
 
 <!-- Replace the # below with your real links -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=D4AF37)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=D4AF37)]((https://www.linkedin.com/in/pratik-singha-a46816383/))
 [![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=D4AF37)](#)
-[![Email](https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=D4AF37)](#)
+[![Email](https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=D4AF37)](pratiksingha1928@gmail.com)
 
 </div>
 
