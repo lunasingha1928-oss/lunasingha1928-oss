@@ -1,1 +1,86 @@
-
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Interactive preview of an animated crimson and gold banner with a spinning clock inside a rotating dotted ring, breathing gold text, a flowing divider, and a spark traveling around the outer border, that speeds up on hover and bursts embers on click.</h2>
+<style>
+@keyframes spin{from{transform:translate(-50%,-100%) rotate(0deg);}to{transform:translate(-50%,-100%) rotate(360deg);}}
+@keyframes spinrev{from{transform:translate(-50%,-100%) rotate(360deg);}to{transform:translate(-50%,-100%) rotate(0deg);}}
+@keyframes ringspin{from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+@keyframes burst{to{transform:translate(var(--tx),var(--ty)) scale(0);opacity:0;}}
+@keyframes glowtext{0%,100%{color:#D4AF37;}50%{color:#F4D976;}}
+@keyframes breathe{0%,100%{opacity:0.55;}50%{opacity:1;}}
+@keyframes flowline{to{background-position-x:-40px;}}
+@keyframes sparkpulse{0%,100%{opacity:0.2;}50%{opacity:1;}}
+#lb-hour{animation:spin 14s linear infinite;}
+#lb-min{animation:spinrev 9s linear infinite;}
+#lb-ring{animation:ringspin 30s linear infinite;}
+#lb-banner.fast #lb-hour{animation-duration:3.5s;}
+#lb-banner.fast #lb-min{animation-duration:2.2s;}
+#lb-banner{transition:box-shadow .3s ease;}
+#lb-banner.fast{box-shadow:inset 0 0 50px rgba(139,0,0,0.5);}
+#lb-name{animation:glowtext 4s ease-in-out infinite;}
+#lb-tagline{animation:breathe 5s ease-in-out infinite 1s;}
+#lb-divider{background-image:repeating-linear-gradient(90deg,#8B0000 0 5px,transparent 5px 10px);background-size:20px 1px;height:1px;animation:flowline 4s linear infinite;}
+#lb-spark{animation:sparkpulse 2s ease-in-out infinite;}
+</style>
+<div id="lb-banner" style="position:relative;overflow:hidden;border-radius:12px;background:linear-gradient(135deg,#0A0A0A 0%,#2E0404 55%,#0A0A0A 100%);border:1px solid rgba(212,175,55,0.45);padding:2.5rem 2rem;cursor:pointer;">
+  <div id="lb-glow" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(139,0,0,0.5) 0%,rgba(139,0,0,0) 70%);pointer-events:none;transition:opacity .3s ease;"></div>
+  <div id="lb-spark" style="position:absolute;width:6px;height:6px;border-radius:50%;background:#D4AF37;pointer-events:none;left:6px;top:6px;transform:translate(-50%,-50%);"></div>
+  <div style="position:relative;display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap;">
+    <div id="lb-clock" style="position:relative;width:130px;height:130px;flex-shrink:0;">
+      <div id="lb-ring" style="position:absolute;left:50%;top:50%;width:152px;height:152px;border:1.5px dotted rgba(212,175,55,0.4);border-radius:50%;"></div>
+      <div style="position:absolute;inset:0;border:1px solid rgba(212,175,55,0.55);border-radius:50%;"></div>
+      <div id="lb-hour" style="position:absolute;left:50%;top:50%;width:2px;height:48px;background:#D4AF37;transform-origin:bottom center;transform:translate(-50%,-100%) rotate(0deg);"></div>
+      <div id="lb-min" style="position:absolute;left:50%;top:50%;width:2px;height:36px;background:#8B0000;transform-origin:bottom center;transform:translate(-50%,-100%) rotate(45deg);"></div>
+      <div style="position:absolute;left:50%;top:50%;width:7px;height:7px;background:#D4AF37;border-radius:50%;transform:translate(-50%,-50%);"></div>
+    </div>
+    <div style="max-width:340px;">
+      <div id="lb-name" style="font-family:Georgia,serif;font-size:40px;font-weight:700;letter-spacing:1px;">LUNA</div>
+      <div id="lb-tagline" style="font-family:Georgia,serif;font-size:12px;color:#E8C766;letter-spacing:3px;margin-top:4px;">AI / ML &middot; REMOTE SENSING &middot; SYSTEMS</div>
+      <div id="lb-divider" style="margin-top:10px;width:100%;"></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var banner=document.getElementById('lb-banner');
+  var glow=document.getElementById('lb-glow');
+  var spark=document.getElementById('lb-spark');
+  banner.addEventListener('mouseenter',function(){banner.classList.add('fast');glow.style.opacity='1';});
+  banner.addEventListener('mouseleave',function(){banner.classList.remove('fast');glow.style.opacity='0.7';});
+  banner.addEventListener('mousemove',function(e){
+    var r=banner.getBoundingClientRect();
+    glow.style.left=(e.clientX-r.left)+'px';
+    glow.style.top=(e.clientY-r.top)+'px';
+  });
+  banner.addEventListener('click',function(e){
+    var r=banner.getBoundingClientRect();
+    var cx=e.clientX-r.left, cy=e.clientY-r.top;
+    var colors=['#D4AF37','#8B0000'];
+    for(var i=0;i<14;i++){
+      var p=document.createElement('div');
+      var angle=Math.random()*Math.PI*2;
+      var dist=30+Math.random()*70;
+      p.style.cssText='position:absolute;width:4px;height:4px;border-radius:50%;background:'+colors[i%2]+';left:'+cx+'px;top:'+cy+'px;pointer-events:none;animation:burst .8s ease-out forwards;--tx:'+(Math.cos(angle)*dist)+'px;--ty:'+(Math.sin(angle)*dist)+'px;';
+      banner.appendChild(p);
+      (function(el){setTimeout(function(){el.remove();},850);})(p);
+    }
+  });
+  function runSpark(){
+    var w=banner.clientWidth, h=banner.clientHeight, inset=6;
+    var W=Math.max(1,w-inset*2), H=Math.max(1,h-inset*2);
+    var perim=2*(W+H), dur=11000, start=null;
+    function frame(ts){
+      if(!start) start=ts;
+      var d=((ts-start)%dur)/dur*perim;
+      var x,y;
+      if(d<W){x=inset+d;y=inset;}
+      else if(d<W+H){x=inset+W;y=inset+(d-W);}
+      else if(d<W+H+W){x=inset+W-(d-W-H);y=inset+H;}
+      else{x=inset;y=inset+H-(d-W-H-W);}
+      spark.style.left=x+'px';
+      spark.style.top=y+'px';
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  runSpark();
+})();
+</script>
