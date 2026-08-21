@@ -2,7 +2,7 @@
 
 <img src="./assets/banner.svg" width="100%"/>
 
-*"Time never stops so do you"*
+*"Take control of your time"*
 
 </div>
 
@@ -17,7 +17,7 @@
 - &#127891; B.E. Computer Science & Engineering (AI & ML), Sathyabama Institute of Science and Technology — Batch 2025–2029
 - &#128300; Research background in GIS / remote sensing — Sentinel-1 SAR, Google Earth Engine, QGIS, CHIRPS
 - &#128196; Published — *ICCET 2026*: SAR-based flood mapping of the Brahmaputra Valley (92.39% accuracy)
-- &#128188; Part-time AI prompt evaluation work, building toward research, freelance, and internship experience
+- &#128188; building toward research, freelance, and internship experience
 
 </td>
 <td width="38%" valign="top">
@@ -37,7 +37,7 @@
 
 ### &#9670; Currently Building
 
-> **trading-bot** — small Python application that places orders on the Binance Futures Testnet, exploring automated strategy execution and exchange API integration.
+> **AegisShell** — Secure Natural-Language Linux Operations. AI proposes, a deterministic policy engine validates, you confirm, only then it runs.
 
 <br>
 
@@ -74,9 +74,9 @@
 ### &#9670; Connect
 
 <!-- Replace the # below with your real links -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=D4AF37)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=D4AF37)](https://www.linkedin.com/in/pratik-singha-a46816383/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=flat-square&logo=vercel&logoColor=D4AF37)](#)
-[![Email](https://img.shields.io/badge/Email-0A0A0A?style=flat-square&logo=gmail&logoColor=D4AF37)](#)
+[![Email](https://img.shields.io/badge/Email-0A0A0A?style=flat-square&logo=gmail&logoColor=D4AF37)](pratiksingha1928@gmail.com)
 
 <br>
 
