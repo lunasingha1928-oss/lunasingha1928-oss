@@ -2,7 +2,7 @@
 
 <img src="./assets/banner.svg" width="100%"/>
 
-*"Every flood leaves a trace. So does every commit."*
+*"Time never stops so do you"*
 
 </div>
 
