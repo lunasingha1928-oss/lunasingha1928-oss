@@ -9,11 +9,11 @@
 [`// NOW`](#-current-state) · [`// WORK`](#-selected-work) · [`// LOADOUT`](#-engineering-loadout) · [`// TELEMETRY`](#-system-telemetry) · [`// CONTACT`](#-connect)
 
 <!-- Drop your Kurumi GIF at assets/kurumi.gif (keep it under ~5 MB) -->
-<img src="assets/kurumi.gif" width="360" alt="Kurumi Tokisaki" />
+<img src="assets/kurumi.png" width="360" alt="Kurumi Tokisaki" />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=D4AF37)](https://linkedin.com/in/YOUR_HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=D4AF37)](https://www.linkedin.com/in/pratik-singha-a46816383/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=D4AF37)](https://YOUR_PORTFOLIO_URL)
-[![Email](https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=D4AF37)](mailto:YOUR_EMAIL)
+[![Email](https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=D4AF37)](mailto:pratiksingha1928@gmail.com)
 
 </div>
 
@@ -62,6 +62,10 @@ Work            · AI prompt evaluation (part-time)
 BUILDING
 ──────────────────────────────
 │
+│
+├── AXIOM
+│   └── Independent verification for govt. infra — satellite + YOLOv8 vs. self-reported progress
+│
 ├── trading-bot
 │   └── Order execution on Binance Futures Testnet
 │
@@ -91,21 +95,21 @@ LEARNING
 
 ## ◆ Selected Work
 
-### [`Chronostasis`](https://github.com/lunasingha1928-oss/Chronostasis)
+### [`AXIOM`](https://github.com/lunasingha1928-oss/axiom2)
 
-![Accuracy](https://img.shields.io/badge/ACCURACY-92.39%25-D4AF37?style=flat-square&labelColor=0A0A0A)
-![Status](https://img.shields.io/badge/STATUS-PUBLIC-8B0000?style=flat-square&labelColor=0A0A0A)
+![Verification](https://img.shields.io/badge/VERIFICATION-SATELLITE%20%2B%20CV-D4AF37?style=flat-square&labelColor=0A0A0A)
+![Stack](https://img.shields.io/badge/STACK-FASTAPI%20%2B%20REACT-D4AF37?style=flat-square&labelColor=0A0A0A)
 
-**OpenEnv environment for AI flood detection** across 5 Indian river basins, built on Sentinel-1 SAR and Google Earth Engine.
+**Independent verification for public infra** — satellite + YOLOv8 catch gaps between reported and actual progress.
 
-`Python` `OpenEnv` `Sentinel-1 SAR` `Google Earth Engine`
+`Python` `FastAPI` `React` `YOLOv8` `Sentinel-2` `XGBoost`
 
 <details>
 <summary><code>▶</code> Technical Notes</summary>
 
-- Flood detection from Sentinel-1 SAR imagery via Google Earth Engine
-- Covers 5 Indian river basins
-- 3 graded tasks with a measured accuracy of 92.39%
+- Progress verification via Sentinel-2 change detection + a self-trained YOLOv8 photo classifier
+- PAIMANA flash-report PDF parsing with page-level source citation back to the original document
+- Risk score is a weighted composite: `0.30×Budget + 0.30×Schedule + 0.20×Discrepancy + 0.10×Sensor + 0.10×Rainfall`
 
 </details>
 
@@ -175,13 +179,11 @@ LEARNING
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=D4AF37)](https://linkedin.com/in/YOUR_HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=D4AF37)](https://linkedin.com/in/https://www.linkedin.com/in/pratik-singha-a46816383/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=flat-square&logo=vercel&logoColor=D4AF37)](https://YOUR_PORTFOLIO_URL)
-[![Email](https://img.shields.io/badge/Email-0A0A0A?style=flat-square&logo=gmail&logoColor=D4AF37)](mailto:YOUR_EMAIL)
+[![Email](https://img.shields.io/badge/Email-0A0A0A?style=flat-square&logo=gmail&logoColor=D4AF37)](mailto:pratiksingha1928@gmail.com)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=lunasingha1928-oss&color=8B0000&style=flat-square&label=PROFILE+VIEWS)
-
-― built, not templated ―
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,100:D4AF37&height=100&section=footer)
 
