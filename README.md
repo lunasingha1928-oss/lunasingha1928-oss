@@ -9,7 +9,7 @@
 [`// NOW`](#-current-state) · [`// WORK`](#-selected-work) · [`// LOADOUT`](#-engineering-loadout) · [`// TELEMETRY`](#-system-telemetry) · [`// CONTACT`](#-connect)
 
 <!-- Drop your Kurumi GIF at assets/kurumi.gif (keep it under ~5 MB) -->
-<img src="assets/kurumi.jpg" width="360" alt="Kurumi Tokisaki" />
+<img src="assets/Kurumi.jpg" width="360" alt="Kurumi Tokisaki" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=D4AF37)](https://www.linkedin.com/in/pratik-singha-a46816383/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=vercel&logoColor=D4AF37)](https://YOUR_PORTFOLIO_URL)
