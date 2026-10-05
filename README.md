@@ -34,7 +34,7 @@
 **📍 Profile**
 
 ```
-Name:       Luna
+Name:       Pratik Singha
 Handle:     lunasingha1928-oss
 Role:       B.E. CSE (AI & ML) Student
 Institute:  Sathyabama Institute of Science & Technology
