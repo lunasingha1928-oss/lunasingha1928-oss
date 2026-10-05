@@ -63,6 +63,9 @@ BUILDING
 ──────────────────────────────
 │
 │
+├── BhuPramaan
+│   └── Land-record harmonisation — co-registered maps + XGBoost, validated on 300 hand-checked pairs
+│
 ├── AXIOM
 │   └── Independent verification for govt. infra — satellite + YOLOv8 vs. self-reported progress
 │
